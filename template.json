@@ -81,10 +81,10 @@
     }
   },
   "variables": {
-    "myVNETName": "BSI-Vnet",
-    "myVNETPrefix": "172.17.201.0/24",
-    "myVNETSubnet1Name": "Subnet2",
-    "myVNETSubnet1Prefix": "172.17.201.0/24",
+    "myVNETName": "myVNET",
+    "myVNETPrefix": "10.0.0.0/16",
+    "myVNETSubnet1Name": "Subnet1",
+    "myVNETSubnet1Prefix": "10.0.0.0/24",
     "diagnosticStorageAccountName": "[concat('diagst', uniqueString(resourceGroup().id))]",
     "operatingSystemValues": {
       "Server2012R2": {
