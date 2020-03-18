@@ -26,7 +26,7 @@
     },
     "virtualMachineCount": {
       "type": "int",
-      "defaultValue": 10,
+      "defaultValue": 100,
       "metadata": {
         "description": "Number of  virtual machines to be created"
       }
@@ -47,7 +47,7 @@
     },
     "operatingSystem": {
       "type": "string",
-      "defaultValue": "windows 10",
+      "defaultValue": "windows 10 Pro",
       "metadata": {
         "description": "Operating System of the Server"
       },
