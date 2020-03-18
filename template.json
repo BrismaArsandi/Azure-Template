@@ -280,12 +280,6 @@
         "[resourceId('Microsoft.Network/virtualNetworks/', variables('myVNETName'))]"
       ]
     },
-    
-    
-
-
-
-
     {
       "apiVersion": "2016-03-30",
       "type": "Microsoft.Network/publicIPAddresses",
