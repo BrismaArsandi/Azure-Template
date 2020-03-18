@@ -282,9 +282,6 @@
     },
     
     
-    "extensionProfile": {
-  "extensions": [
-    {
       "name": "AppInstall",
       "properties": {
         "publisher": "Microsoft.Azure.Extensions",
@@ -297,10 +294,7 @@
           ],
           "commandToExecute": "./anyconnect-win-4.6.03049-core-vpn-predeploy-k9.msi"
         }
-      }
-    }
-  ]
-},
+      },
 
 
 
