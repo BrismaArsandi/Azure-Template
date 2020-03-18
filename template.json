@@ -47,7 +47,7 @@
     },
     "operatingSystem": {
       "type": "string",
-      "defaultValue": "Server2016",
+      "defaultValue": "windows 10",
       "metadata": {
         "description": "Operating System of the Server"
       },
