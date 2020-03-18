@@ -282,19 +282,7 @@
     },
     
     
-      "name": "AppInstall",
-      "properties": {
-        "publisher": "Microsoft.Azure.Extensions",
-        "type": "CustomScript",
-        "typeHandlerVersion": "2.0",
-        "autoUpgradeMinorVersion": true,
-        "settings": {
-          "fileUris": [
-            "https://365bsi-my.sharepoint.com/personal/bsi80065_bsi_co_id/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fbsi80065%5Fbsi%5Fco%5Fid%2FDocuments%2FAttachments%2Fanyconnect%2Dwin%2D4%2E6%2E03049%2Dcore%2Dvpn%2Dpredeploy%2Dk9%2Emsi"
-          ],
-          "commandToExecute": "./anyconnect-win-4.6.03049-core-vpn-predeploy-k9.msi"
-        }
-      },
+
 
 
 
