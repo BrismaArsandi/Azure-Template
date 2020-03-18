@@ -17,7 +17,7 @@
       }
     },
     "virtualMachineNamePrefix": {
-      "defaultValue": "AZVPN00",
+      "defaultValue": "AZVPN0",
       "type": "string",
       "maxLength": 15,
       "metadata": {
@@ -47,7 +47,7 @@
     },
     "operatingSystem": {
       "type": "string",
-      "defaultValue": "windows 10 Pro",
+      "defaultValue": "Server2016",
       "metadata": {
         "description": "Operating System of the Server"
       },
@@ -280,6 +280,30 @@
         "[resourceId('Microsoft.Network/virtualNetworks/', variables('myVNETName'))]"
       ]
     },
+    
+    
+    "extensionProfile": {
+  "extensions": [
+    {
+      "name": "AppInstall",
+      "properties": {
+        "publisher": "Microsoft.Azure.Extensions",
+        "type": "CustomScript",
+        "typeHandlerVersion": "2.0",
+        "autoUpgradeMinorVersion": true,
+        "settings": {
+          "fileUris": [
+            "https://365bsi-my.sharepoint.com/personal/bsi80065_bsi_co_id/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fbsi80065%5Fbsi%5Fco%5Fid%2FDocuments%2FAttachments%2Fanyconnect%2Dwin%2D4%2E6%2E03049%2Dcore%2Dvpn%2Dpredeploy%2Dk9%2Emsi"
+          ],
+          "commandToExecute": "./anyconnect-win-4.6.03049-core-vpn-predeploy-k9.msi"
+        }
+      }
+    }
+  ]
+},
+
+
+
     {
       "apiVersion": "2016-03-30",
       "type": "Microsoft.Network/publicIPAddresses",
@@ -300,5 +324,5 @@
       }
     }
   ],
-  "outputs": {}
+  "outputs": {"ok"}
 }
