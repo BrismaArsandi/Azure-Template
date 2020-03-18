@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southeastasia"
+        },
+        "networkInterfaceName": {
+            "value": "azvpn002164"
+        },
+        "networkSecurityGroupName": {
+            "value": "AZVPN002-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "RDP",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "3389"
+                    }
+                }
+            ]
+        },
+        "subnetName": {
+            "value": "subnet2"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/567a7d2a-b9b2-4e0e-bd87-72842503ba05/resourceGroups/BSI-RG/providers/Microsoft.Network/virtualNetworks/BSI-Vnet"
+        },
+        "virtualMachineName": {
+            "value": "AZVPN002"
+        },
+        "virtualMachineRG": {
+            "value": "BSI-RG"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2"
+        },
+        "adminUsername": {
+            "value": "azureadmin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "bsidisk"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/567a7d2a-b9b2-4e0e-bd87-72842503ba05/resourceGroups/BSI-RG/providers/Microsoft.Storage/storageAccounts/bsidisk"
+        }
+    }
+}
